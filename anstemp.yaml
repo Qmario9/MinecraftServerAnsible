@@ -7,14 +7,14 @@
     - name: Create EC2 Instance using Terraform
       shell: terraform apply -auto-approve
       args:
-        chdir: /Users/marioquiterio/SysAdminFinal
+        chdir: /your/path/to/workingDir
       register: terraform_apply_output
       changed_when: false
 
     - name: Retrieve Terraform Output
       shell: terraform output instance_public_ip
       args:
-        chdir: /Users/marioquiterio/SysAdminFinal
+        chdir: /your/path/to/workingDir
       register: terraform_output
 
     - name: Set dynamic host for the created instance
