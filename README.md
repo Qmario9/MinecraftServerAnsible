@@ -36,6 +36,12 @@ main.tf
 <br>
 <br>
 
+### Your path directory
+Make sure you change it on the anstemp.yaml file
+
+<br>
+<br>
+
 ### **What is going on?**
 Here are all the steps of the pipeline which we will go into individually.
 * Terraform creates EC2 instance
