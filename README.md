@@ -2,6 +2,12 @@
 
 Today we will be installing a Minecraft server with Ansible and Terraform(and a few other scripts) using AWS!
 <br>
+### To run
+Make sure you have cloned the repo and changed the following down below in the requirements before you do these steps!
+> terraform init
+> 
+> terraform plan
+> ansible-playbook -i hosts.yaml anstemp.yaml
 
 ### **Requirements**
 
