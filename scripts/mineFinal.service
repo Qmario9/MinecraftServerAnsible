@@ -1,0 +1,17 @@
+[Unit]
+Description=My Java driven simple service
+After=syslog.target network.target
+
+[Service]
+SuccessExitStatus=143
+
+User=ubuntu
+
+Type=simple
+
+WorkingDirectory=/opt/minecraft/server/
+ExecStart=sudo /opt/minecraft/server/starting
+ExecStop=/bin/kill -15 $MAINPID
+
+[Install]
+WantedBy=multi-user.target
