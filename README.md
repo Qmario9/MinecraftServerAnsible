@@ -5,9 +5,15 @@ Today we will be installing a Minecraft server with Ansible and Terraform(and a 
 ### To run
 Make sure you have cloned the repo and changed the following down below in the requirements before you do these steps!
 > terraform init
-> 
+
 > terraform plan
+
 > ansible-playbook -i hosts.yaml anstemp.yaml
+
+
+### Some common errors
+* Cannot have a paraphrase in the key pair
+* Make sure you change all the keys and directory and credentials in the files
 
 ### **Requirements**
 
